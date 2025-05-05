@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset  */
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +6,23 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Consolas, 'Courier New', monospace;
   background-color: #fff;
   color: #333;
   line-height: 1.6;
+}
+
+/* Encabezado  */
+.encabezado {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.nombre-grupo {
+  font-size: 40px;
+  color: #ff4081;
+  letter-spacing: 2px;
 }
 
 /* NAVBAR */
@@ -28,8 +41,9 @@ body {
 }
 
 .icono-casa {
-  width: 32px;
+  width: 48px;
   height: auto;
+  filter: brightness(0) invert(1);
 }
 
 /* CONTENEDOR DEL MENÚ */
@@ -61,7 +75,7 @@ body {
   z-index: 9;
 }
 
-/* AL HACER HOVER EN EL CONTENEDOR SE MUESTRA */
+/* Mostrar menú al hacer hover */
 .menu-contenedor:hover .menu {
   display: flex;
 }
@@ -154,7 +168,7 @@ body {
 
 .galeria img:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* FOOTER */
