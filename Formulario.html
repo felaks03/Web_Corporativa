@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Fans - [Nombre de la Banda]</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>¡Únete al Club de Fans!</h1>
+    <form action="procesar_formulario.php" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" required>
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais">
+        </fieldset>
+
+        <fieldset>
+            <legend>Tu experiencia como fan</legend>
+            
+            <label for="cancion">¿Tu canción favorita de la banda?</label>
+            <input type="text" id="cancion" name="cancion">
+
+            <label for="conciertos">¿Has ido a algún concierto?</label>
+            <select id="conciertos" name="conciertos">
+                <option value="no">No aún</option>
+                <option value="si_una">Sí, una vez</option>
+                <option value="si_varias">Sí, varias veces</option>
+            </select>
+
+            <label for="integrante_favorito">¿Cuál es tu integrante favorito?</label>
+            <select name="integrante_favorito" id="integrante_favorito">
+                <option value="" disabled selected>-- Elige a tu favorito --</option>
+                <option value="manu">Manu, el papi bajista</option>
+                <option value="felix">Felix, el baterista loco</option>
+                <option value="alex">Alex, el cantante chulo</option>
+                <option value="santi">Santi, el guitarrista sin solos</option>
+            </select>
+
+            <label>¿Qué te gustaría recibir?</label>
+            <input type="checkbox" name="contenido[]" value="noticias"> Noticias por correo<br>
+            <input type="checkbox" name="contenido[]" value="sorteos"> Participar en sorteos<br>
+            <input type="checkbox" name="contenido[]" value="merch"> Descuentos en merchandising
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensaje para la banda</legend>
+            <label for="mensaje">Escribe tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="¡Nos encantaría leer tu mensaje!"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar todo">
+    </form>
+</body>
+</html>
