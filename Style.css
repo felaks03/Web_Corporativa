@@ -1,16 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('img/backgroundForm.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:  
+            linear-gradient(rgba(44, 0, 62, 0.7), rgba(0, 0, 0, 0.7)), 
+            url('imagenes/backgroundForm.jpg'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 20px;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #0a0a0a;
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .icono-casa {
+    width: 32px;
+    height: auto;
+  }
+  
+  /* CONTENEDOR DEL MENÚ */
+  .menu-contenedor {
+    position: relative;
+  }
+  
+  .menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    padding: 5px 10px;
+  }
+  
+  /* MENÚ OCULTO INICIALMENTE */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #0a0a0a;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    min-width: 180px;
+    z-index: 9;
+  }
+  
+  /* AL HACER HOVER EN EL CONTENEDOR SE MUESTRA */
+  .menu-contenedor:hover .menu {
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .menu li a:hover {
+    color: #ff4081;
+  }
+
 h1 {
-    color: gainsboro;
-    text-align: center;
+    color: #333;
+    background-color: white;
+    text-align: left;
     
 }
 
@@ -69,3 +145,12 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: darkgoldenrod;
 }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0a0a0a;
+    color: #999;
+    margin-top: 40px;
+  }

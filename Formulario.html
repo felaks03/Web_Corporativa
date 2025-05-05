@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <h1>¡Únete al Club de Fans!</h1>
+
+    <header>
+        <h1>SoundDevs</h1>
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="imagenes/home.png" alt="Inicio" class="icono-casa">
+          </a>
+        
+          <div class="menu-contenedor">
+            <span class="menu-icon">☰</span>
+            <ul class="menu">
+              <li><a href="areas.html">Conciertos</a></li>
+              <li><a href="quienes.html">El Grupo</a></li>
+              <li><a href="contacto.html">Club de Fans</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    
     <form action="procesar_formulario.php" method="post">
         <fieldset>
             <legend>Datos Personales</legend>
@@ -62,5 +80,10 @@
         <input type="submit" value="Enviar">
         <input type="reset" value="Borrar todo">
     </form>
+
+    <footer>
+        <p>&copy; 2025 SoundDevs - Todos los derechos reservados.</p>
+      </footer>
+
 </body>
 </html>
