@@ -9,6 +9,12 @@
     color: #333;
     line-height: 1.6;
     background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    flex: 1;
   }
   
   .encabezado {
@@ -150,30 +156,63 @@
   .lista-conciertos li {
     margin-bottom: 10px;
   }
-  
-  @media (max-width: 768px) {
-    .contenido {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .about,
-    .conciertos {
-      width: 100%;
-    }
+
+  body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+@media (min-width: 1300px) {
+  body {
+    max-width: 1300px;
+    margin: 0 auto;
   }
-  .boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff4081;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .contenido {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .boton:hover {
-    background-color: #d81b60;
+  .about,
+  .conciertos {
+    width: 100%;
   }
-    
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .contenido {
+    flex-wrap: wrap;
+  }
+  .about,
+  .conciertos {
+    width: 48%;
+  }
+}
+
+@media (max-width: 599px) {
+  .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about,
+  .conciertos {
+    width: 100%;
+  }
+}
+
+@media (max-width: 599px) and (orientation: landscape) {
+  .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about,
+  .conciertos {
+    width: 100%;
+  }
+}
