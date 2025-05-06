@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Consolas, 'Courier New', monospace;
+    color: #333;
+    line-height: 1.6;
+    background-color: #000;
+  }
+  
+  .encabezado {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .nombre-quienes {
+    font-size: 40px;
+    color: #ff4081;
+    letter-spacing: 2px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #0a0a0a;
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .menu-contenedor {
+    position: relative;
+  }
+  
+  .menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    padding: 5px 10px;
+  }
+  
+  .icono-casa {
+    width: 48px;
+    height: auto;
+    filter: brightness(0) invert(1);
+  }
+  
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #0a0a0a;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    min-width: 180px;
+    z-index: 9;
+  }
+  
+  .menu-contenedor:hover .menu {
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .menu li a:hover {
+    color: #ff4081;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0a0a0a;
+    color: #999;
+    margin-top: 40px;
+  }
+  
+  .contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #000;
+    flex-wrap: wrap;
+  }
+  
+  .about,
+  .conciertos {
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 48%;
+  }
+  
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .conciertos {
+    margin-top: 100px;
+  }
+  
+  .conciertos h2 {
+    color: #ff4081;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .lista-conciertos {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .lista-conciertos li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .contenido {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about,
+    .conciertos {
+      width: 100%;
+    }
+  }
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: #d81b60;
+  }
+    
