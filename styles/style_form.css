@@ -84,8 +84,8 @@ body {
   }
 
 h1 {
-    color: darkmagenta;
-    background-color: white;
+    color: #ff4081;
+    background-color: black;
     text-align: center;
     
 }
@@ -106,7 +106,7 @@ fieldset {
 
 legend {
     font-weight: bold;
-    color: darkmagenta;
+    color: #ff4081;
     margin-bottom: 10px;
 }
 
@@ -132,7 +132,7 @@ textarea {
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: darkmagenta;
+    background-color: #ff4081;
     color: white;
     border: none;
     padding: 10px 20px;
