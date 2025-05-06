@@ -43,7 +43,11 @@ body {
 .icono-casa {
   width: 48px;
   height: auto;
-  filter: brightness(0) invert(1);
+}
+
+.icono-casa:hover{
+  background-color: rgba(255, 64, 129, 0.6);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 /* CONTENEDOR DEL MENÚ */
@@ -57,6 +61,11 @@ body {
   color: white;
   user-select: none;
   padding: 5px 10px;
+}
+
+.menu-icon:hover{
+  background-color: rgba(255, 64, 129, 0.6);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 /* MENÚ OCULTO INICIALMENTE */
@@ -88,6 +97,7 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  transition: 0.4s;
 }
 
 .menu li a:hover {
